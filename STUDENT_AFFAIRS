@@ -1,0 +1,48 @@
+############***WELCOME***############
+print("************STUDENT AFFAIRS************")
+myusername="Elçin"
+counter=3
+
+while True:
+  if (counter>0):
+    username=input("Please Enter Your Name: ")
+    if (username==myusername):
+      print("Welcome!\n")
+      break
+    elif (username!=myusername):
+      print("")
+    counter-=1
+  else:
+    print("Please Try Again Later!\n")
+    break
+
+#############***LIST***#############
+
+liste=list() 
+for i in range(5): 
+  lesson=input("PLEASE CHOOSE AT LEAST 3 LESSONS:") 
+  liste.append(lesson) 
+  print(liste) 
+
+for i in liste:
+  if len(liste)>3:
+    print("**PLEASE CHOOSE A COURSE AND WRITE DOWN YOUR SCORES**")
+    
+############***GRADES***############
+
+    midterm=int(input("Please Enter Your Midterm Grade: "))
+    final=int(input("Please Enter Your Final Grade: "))
+    project=int(input("Please Enter Your Project Grade: "))
+    break
+average=(midterm*0.30)+(final*0.50)+(project*0.20)
+if (average >= 90):
+        print("Your Grade is: AA")
+elif (average >= 70 and average < 90):
+        print("Your Grade is: BB")
+elif (average >= 50 and average < 70):
+        print("Your Grade is: CC")
+elif (average >= 30 and average < 50):
+        print("Your Grade is: DD")
+elif (average >= 0 and average < 30):
+        print("Your Grade is: FF \nYou Failed The Lesson!")
+  
